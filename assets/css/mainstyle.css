@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+button{
+    all: unset;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/********************************************************************************************************************
+****************************************************** CUSTOM CLASS *************************************************
+*********************************************************************************************************************/
+.menu__list,.menu__search,.menu__mobile,.menu__search__row{
+    display: none;
+}
+
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat" sans-serif;
+}
+.debug{
+    border: 1px solid red;
+}
+
+.menu .container{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+.menu__brands{
+    display: flex;
+}
+.menu__toggle{
+    margin-right: .3rem;
+}
+.menu__brands{
+    width: 6rem;
+}
+.menu__btn{
+    text-transform: uppercase;
+    color: white;
+    font-size: .8rem;
+    font-weight: bold;
+    width: 8rem;
+    word-wrap: break-word;
+    display: inline-block;
+    background-color:rgb(229 0 70);
+    padding: .5rem;
+}
+.menu__actions{
+margin-left: auto;
+display: flex;
+align-items: center;
+gap: 2rem;
+}
+.menu__mobile__active .menu__mobile__list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu__mobile__active .menu__mobile__search{
+    padding: 1rem;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__mobile__active .menu__mobile__close{
+    padding-right: 1rem;
+    text-align: right;
+}
+.menu__mobile input{
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+.menu__mobile__reseaux{
+    margin-top: 2rem;
+}
+.menu__mobile__reseaux ul{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    
+}
+.menu__mobile__reseaux h4{
+    text-transform: uppercase;
+    color:rgb(143 143 143);
+}
+.menu__mobile__reseaux ul a{
+    padding: .5rem;
+    background-color: rgb(229 0 70);
+    border-radius: 50%;
+    display: inline-block;
+}
+.menu__mobile.menu__mobile__active{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1rem;
+    padding: 1rem;
+    display: flex;
+}
+.menu__search__row.active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: block;
+    height: 8rem;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu__search__row.active input{
+    width: 90%;
+    padding: 1rem 1rem 1rem 0;
+    border: none;
+    border-bottom: 1px solid rgb(143 143 143);
+    font-size: 2rem;
+    outline: none;
+}
+.menu__search__row__close{
+    position: absolute;
+    right: 5%;
+    top: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.banner{
+    height: 83vh;
+}
+.banner__img{
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .menu__mobile{
+        display: none;
+    }
+  }
+
+
+@media (min-width: 992px) { 
+
+
+}
+
+
+@media (min-width: 1200px) {  }
+
+
+@media (min-width: 1400px) { 
+    .menu__toggle{
+        display: none;
+    }
+    .menu .logo{
+        width: 5rem;
+        display: inline-block;
+    }
+    .menu .container{
+        padding: 1.5rem 4rem;
+        gap: 3rem;
+    }
+    .menu__actions{
+        margin-left: 0;
+    }
+    .menu__links{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .menu__list{
+        display: flex;
+        flex: 2;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .menu .container{
+        justify-content: center;
+    }
+    .menu__search{
+        display: inline-block;
+        cursor: pointer;
+    }
+ }
